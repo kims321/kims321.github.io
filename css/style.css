@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+.portfolio,
+.portfolio * {
+  box-sizing: border-box;
+}
+
+.portfolio {
+  margin: 0;
+  background: #f7f9fb;
+  color: #535252;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  -webkit-text-size-adjust: 100%;
+}
+
+.portfolio .portfolio-main {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: 70px 24px 100px;
+}
+
+.portfolio .page-header {
+  margin-bottom: 40px;
+}
+
+.portfolio h1 {
+  margin: 0 0 16px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.portfolio .page-header p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.portfolio .sample-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 24px;
+}
+
+.portfolio .sample-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid rgba(20, 38, 66, .12);
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(20, 38, 66, .04);
+}
+
+.portfolio .sample-images {
+  position: relative;
+  padding-bottom: 16px;
+}
+
+.portfolio .sample-pc {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: center top;
+  border: 1px solid rgba(20, 38, 66, .12);
+  border-radius: 4px;
+}
+
+.portfolio .sample-sp {
+  position: absolute;
+  right: 16px;
+  bottom: 0;
+  display: block;
+  width: 23%;
+  height: auto;
+  border: 4px solid #fff;
+  border-radius: 4px;
+}
+
+.portfolio .sample-content {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 24px;
+}
+
+.portfolio .sample-tag {
+  margin: 0 0 16px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: #e6edf2;
+  color: #556169;
+  font-size: 12px;
+}
+
+.portfolio h2 {
+  min-height: 3.2em;
+  margin: 0 0 16px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.portfolio .sample-features {
+  align-self: stretch;
+  margin: 0 0 24px;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.portfolio .sample-link {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  padding: 8px 24px;
+  border: 1px solid rgba(20, 38, 66, .12);
+  border-radius: 4px;
+  color: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.portfolio .sample-link:hover {
+  background: #f7f9fb;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.portfolio .sample-link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+@media (max-width: 1023px) {
+  .portfolio .sample-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 479px) {
+  .portfolio .portfolio-main {
+    padding: 40px 16px 70px;
+  }
+
+  .portfolio h1 {
+    font-size: 24px;
+  }
+}
